@@ -4,24 +4,20 @@
 *::before {
   margin: 0;
   padding: 0;
-  list-style: none;
   outline: none;
+  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
 }
 body {
   font-size: 14px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 20px;
+body {
+  font-family: 'Inter', sans-serif;
 }
 p {
   font-size: 14px;
+  color: var(--paragraphColor);
 }
 img {
   max-width: 100%;
@@ -30,7 +26,30 @@ img {
 
 /* Custom Class Container inner  */
 .container {
-  max-width: 1440px;
+  max-width: 1367px;
   margin: 0 auto;
-  padding: 10px 5px;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.btnCta {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  transition: 0.4s all ease-in-out;
+}
+.btnCta:hover {
+  background-color: #2ecc71;
 }

@@ -1,4 +1,128 @@
 :root {
-  --primaryColor: #ddd;
-  --srcColor: #ddd;
+  --primaryColor: #469165;
+  --secondaryColor: #627382;
+
+  /* Background Color */
+  --bgColor: #fbfbfb;
+
+  /* Text Color  */
+  --headingColor: #001931;
+  --paragraphColor: #627382;
+  --whiteColor: #fff;
+}
+
+/* Navigation Menu Style */
+#nav {
+  padding: 24px 8px;
+}
+#nav ul {
+  margin: 0;
+}
+#nav ul li {
+  list-style: none;
+}
+#nav ul a {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.container .btn {
+  margin: 0;
+}
+
+/* Hero Header Style */
+#hero_header {
+  background: url(../assets/hero-bg.png);
+  /* rgba(0, 25, 49, 0.8) */
+  background-repeat: no-repeat;
+  background-position: center, center;
+  object-fit: cover;
+}
+#hero_header .Hero_contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+  padding: 115px 0;
+}
+
+.Hero_contents .early_access_btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--whiteColor);
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+.early_access_btn img {
+  width: 16px;
+  height: 16px;
+}
+.early_access_btn span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+
+.Hero_contents .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.details h1 {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 84px;
+  text-transform: capitalize;
+}
+.details h1 span {
+  color: var(--primaryColor);
+}
+
+.details p {
+  color: var(--paragraphColor);
+  font-size: 16px;
+  line-height: 24px;
+}
+.Hero_contents .btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.btn_container .btns1 {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: var(--primaryColor);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.btn_container .btns2 {
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--whiteColor);
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.btns1:hover {
+  background-color: #2ecc71;
+}
+.btns2:hover {
+  background-color: var(--primaryColor);
+}
+.btns1 a,
+.btns2 a {
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-weight: 600;
 }
