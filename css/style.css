@@ -199,3 +199,40 @@
 .child_notes_card:nth-child(4) .notes_details h4 {
   font-size: 24px;
 }
+
+/* knowledge section */
+#knowledge_area {
+  margin-bottom: 130px;
+}
+#knowledge_area .knowledge_img {
+  flex-basis: 50%;
+}
+#knowledge_area .knowledge_details {
+  flex-basis: 50%;
+}
+.knowledge_details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.knowledge_details h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+}
+.knowledge_details h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--headingColor);
+}
+.knowledge_details .icons_details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.icons_details .icon_text {
+  display: flex;
+  gap: 6px;
+}
