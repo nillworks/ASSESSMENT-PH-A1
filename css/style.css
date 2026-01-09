@@ -33,7 +33,7 @@
 
 /* Hero Header Style */
 #hero_header {
-  background: url(../assets/hero-bg.png);
+  background: url(../assets/hero-bg.png), rgba(0, 25, 49, 0.8);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -78,13 +78,14 @@
   font-weight: bold;
   line-height: 84px;
   text-transform: capitalize;
+  color: var(--whiteColor);
 }
 .details h1 span {
-  color: var(--primaryColor);
+  color: #30ac65;
 }
 
 .details p {
-  color: var(--paragraphColor);
+  color: var(--whiteColor);
   font-size: 16px;
   line-height: 24px;
 }
@@ -103,6 +104,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  transition: 0.4s all ease-in-out;
 }
 .btn_container .btns2 {
   padding: 16px;
@@ -221,7 +223,7 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--primaryColor);
+  color: #30b868;
 }
 .knowledge_details h2 {
   font-size: 48px;
