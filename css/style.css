@@ -4,6 +4,7 @@
 
   /* Background Color */
   --bgColor: #fbfbfb;
+  --srcBgColor: #f7f6f2;
 
   /* Text Color  */
   --headingColor: #001931;
@@ -235,4 +236,59 @@
 .icons_details .icon_text {
   display: flex;
   gap: 6px;
+}
+
+/*   <!-- Ready to think more section --> */
+
+#thinkMore {
+  margin-bottom: 130px;
+}
+#thinkMore .think_more_details {
+  background-color: var(--srcBgColor);
+  padding: 80px 40px;
+  border-radius: 12px;
+}
+.think_more_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+.think_more_details h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--headingColor);
+}
+.think_more_details p {
+  line-height: 24px;
+}
+.think_more_details .btns_getAcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 4px;
+  transition: 0.4s all ease-in-out;
+  background-color: var(--primaryColor);
+}
+.btns_getAcc a {
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+.btns_getAcc:hover {
+  background-color: #2ecc71;
+}
+
+.think_more_details .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.text span {
+  color: var(--paragraphColor);
 }
